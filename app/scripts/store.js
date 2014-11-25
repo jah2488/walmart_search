@@ -1,0 +1,1 @@
+WalmartSearch.ApplicationAdapter = DS.FixtureAdapter;
