@@ -1,5 +1,10 @@
 <div class="well">
   {{input type='search' value=query}}
   <button {{action 'search'}}>Search</button>
-  {{results}}
+  {{#each item in results.items}}
+    <li>
+      <h4>{{item.name}}</h4>
+      <p>{{item.shortDescription}}</p>
+    </li>
+  {{/each}}
 </div>
